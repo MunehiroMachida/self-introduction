@@ -78,7 +78,7 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 
-.profile {
+.profile-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,33 +86,41 @@ body {
   margin: 0 auto 40px;
 }
 
-.profile .my-img img {
+.profile-main .my-img img {
   width: 300px;
   border-radius: 50%;
 }
 
-.service {
+.service-main {
+  background-color: aqua;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.service-main section h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.service-main .service-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: aqua;
-  width: 40%;
-  margin: 0 auto;
 }
 
-.service .service-box .service-title {
+.service-main .service-area .service-box .service-title {
   font-size: 30px;
 }
 
-.service .service-box p {
+.service-main .service-area .service-box p {
   background-color: #918e8e;
   text-align: center;
 }
 
-.service .service-box p img {
+.service-main .service-area .service-box p img {
   margin: 0 auto;
   width: 150px;
   height: 150px;
