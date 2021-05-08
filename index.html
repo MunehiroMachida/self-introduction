@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="/style.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/commmon.css" /> -->
+
+
+    <!-- <script type="text/javascript" src="js/common.js"></script> -->
+
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
     <title>自己紹介</title>
 </head>
@@ -17,37 +25,106 @@
         <div class="header-box">
             <h1>Hope</h1>
             <div class="header-menu">
-                <p class="service"><a href="">サービス</a></p>
-                <p class="skill"><a href="">スキル</a></p>
-                <p class="work"><a href="">仕事内容</a></p>
-                <p class="inquiry"><a href="">お問い合わせ</a></p>
+                <p class="work"><a href="#service-main">仕事内容</a></p>
+                <p class="skill"><a href="#skill-main">スキル</a></p>
+                <p class="inquiry"><a href="#sns">お問い合わせ</a></p>
             </div>
         </div>
     </header>
     <main>
+
         <div class="fv">
             <div class="fv-title">munehiro machida's portfolio</div>
 
             <!-- <img src="./img/photo0000-3900.jpg" alt=""> -->
         </div>
 
-        <div class="profile-main">
-            <p class="my-img">
-                <img src="./img/myimg.jpg" alt="">
-            </p>
-            <div class="my-txt">
-                <p class="name">名前： 町田宗宏（まちだむねひろ）</p>
-                <p>自分のこと</p>
-                <p>経歴：</p>
+        <section class="profile-main">
+            <h2>自己紹介</h2>
+            <div class="profile-box">
+                <p class="my-img">
+                    <img src="./img/myimg.jpg" alt="">
+                </p>
+                <div class="my-txt">
+                    <p class="name">名前： 町田宗宏（まちだむねひろ）</p>
+                    <p>生年月日： 1995/12/31</p>
+                    <p>経歴：<br>
+                        自己学習後、制作会社に入社しHTMLコーダーとして8ヶ月経験を積む。<br>
+                        その後、さらに活動の幅を広げたいと思い、プログラミングスクールに入学。<br>
+                        卒業後は、バックエンドエンジニアとして就職。<br>
+                        副業で、Web制作の案件にも参画している。
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
 
 
-        <article class="service-main">
+        <article id="service-main">
             <section>
-                <h2>Service</h2>
+                <h2>仕事内容</h2>
             </section>
             <div class="service-area">
+                <div class="service-box">
+                    <p class="service-title">Wordpress</p>
+                    <p><img src="./img/wordpress.jpg" alt=""></p>
+                    <p class="service-box-txt">コーポレートサイトや個人ブログなど、Wordpressサイトの構築や既存サイトのWordPress以降、コードの修正に対応しております。</p>
+                    <p class="price">【料金目安】<br>
+                        Wordpress移行：¥100,000~<br>
+                        Wordpress制作：¥200,000~
+                    </p>
+                </div>
+                <div class="service-box">
+                    <p class="service-title">Coding</p>
+                    <p><img src="./img/icon_service03.jpg" alt=""></p>
+                    <p class="service-box-txt">LPやコーポレートサイト、ブログなど、目的に大氏た適切なコーディングを行います。(レスポンシブ対応可)。また、軽微なコード修正などにも対応しています。</p>
+                    <p class="price">【料金目安】<br>
+                        コード修正：¥10,000~/1p<br>
+                        LP制作：¥20,000~/2p
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+        <article id="skill-main">
+            <section>
+                <h2>スキル</h2>
+            </section>
+            <div id="wrap">
+                <ul id="slider">
+                    <li>
+                        <img src="./img/html-logo.jpg" alt="">
+                        <img src="./img/css-logo.jpg" alt="">
+                        <img src="./img/wordpress-logo.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/js-logo.jpg" alt="">
+                        <img src="./img/php-logo.jpg" alt="">
+                        <img src="./img/java-logo.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/mysql-logo.jpg" alt="">
+                        <img src="./img/github-logo.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="skill-img">
+                <p>
+
+                    <img src="./img/css-logo.jpg" alt="">
+                    <img src="./img/wordpress-logo.jpg" alt="">
+                </p>
+                <p>
+                    <img src="./img/js-logo.jpg" alt="">
+                    <img src="./img/php-logo.jpg" alt="">
+                    <img src="./img/java-logo.jpg" alt="">
+                </p>
+                <p>
+                    <img src="./img/mysql-logo.jpg" alt="">
+                    <img src="./img/github-logo.jpg" alt="">
+                </p>
+            </div> -->
+            <!-- <div class="service-area">
                 <div class="service-box">
                     <p class="service-title">Wordpress</p>
                     <p><img src="./img/wordpress.jpg" alt=""></p>
@@ -58,31 +135,43 @@
                     <p><img src="./img/icon_service03.jpg" alt=""></p>
                     <p class="service-box-txt">testtesttesttesttesttesttesttest<br>testtesttesttesttesttest</p>
                 </div>
+            </div> -->
+        </article>
+        <!-- 
+        <article class="site">
+            <h2>ポートフォリオサイト</h2>
+        </article> -->
+
+        <article id="sns">
+            <h2>お問い合わせ</h2>
+            <div class="sns-box">
+                <a href="https://www.instagram.com/munehiromachida/" target="_blank">
+                    <img src="./img/glyph-logo_May2016.png" alt="">
+                </a>
+                <div class="email">
+                    <p class="email-title">
+                        <img src="./img/email.png" alt="">
+                        <span>メールアドレス</span>
+                    </p>
+                    <p>machida951461@gmail.com</p>
+                </div>
             </div>
         </article>
-
-
-        <article class="skill-main">
-            <section>
-                <h2>Skill</h2>
-            </section>
-            <div class="service-area">
-                <div class="service-box">
-                    <p class="service-title">Wordpress</p>
-                    <p><img src="./img/wordpress.jpg" alt=""></p>
-                    <p class="service-box-txt">testtesttesttesttesttesttesttest<br>testtesttesttesttesttest</p>
-                </div>
-                <div class="service-box">
-                    <p class="service-title">Coding</p>
-                    <p><img src="./img/icon_service03.jpg" alt=""></p>
-                    <p class="service-box-txt">testtesttesttesttesttesttesttest<br>testtesttesttesttesttest</p>
-                </div>
-            </div>
-        </article>
-
 
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-menu">
+            <p class="work"><a href="">仕事内容</a></p>
+            <p class="skill"><a href="">スキル</a></p>
+            <p class="inquiry"><a href="">お問い合わせ</a></p>
+        </div>
+        <div class="footer-copy">
+            　<p>&copy; Munehiro Machida. 2021.</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>

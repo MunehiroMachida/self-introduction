@@ -1,6 +1,12 @@
 body {
   width: 100%;
-  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .header {
@@ -79,30 +85,12 @@ body {
 }
 
 .profile-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70%;
-  margin: 0 auto 40px;
+  width: 53%;
+  min-width: 600px;
+  margin: 0 auto 100px;
 }
 
-.profile-main .my-img img {
-  width: 300px;
-  border-radius: 50%;
-}
-
-.service-main {
-  background-color: aqua;
-  width: 40%;
-  margin: 0 auto;
-}
-
-.service-main section h2 {
-  text-align: center;
-  font-size: 24px;
-}
-
-.service-main .service-area {
+.profile-main .profile-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,18 +99,155 @@ body {
           justify-content: space-between;
 }
 
-.service-main .service-area .service-box .service-title {
+.profile-main .profile-box .my-img img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-main .profile-box .my-txt {
+  margin-left: 30px;
+}
+
+.profile-main .profile-box .my-txt p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#service-main {
+  width: 53%;
+  min-width: 600px;
+  margin: 0 auto 100px;
+}
+
+#service-main section h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+#service-main .service-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#service-main .service-area .service-box .service-title {
   font-size: 30px;
 }
 
-.service-main .service-area .service-box p {
-  background-color: #918e8e;
+#service-main .service-area .service-box p {
+  width: 350px;
   text-align: center;
 }
 
-.service-main .service-area .service-box p img {
+#service-main .service-area .service-box p img {
   margin: 0 auto;
   width: 150px;
   height: 150px;
+}
+
+#service-main .service-area .service-box .service-box-txt {
+  margin-bottom: 20px;
+}
+
+#skill-main {
+  width: 53%;
+  min-width: 600px;
+  margin: 0 auto 100px;
+}
+
+#skill-main #wrap {
+  padding: 50px 0;
+}
+
+#skill-main #slider {
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#skill-main #slider li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  line-height: 100px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+#skill-main #slider li img {
+  width: 130px;
+}
+
+#sns {
+  width: 53%;
+  min-width: 600px;
+  margin: 0 auto 100px;
+}
+
+#sns .sns-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sns .sns-box a {
+  display: block;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#sns .sns-box a img {
+  width: 30px;
+}
+
+#sns .sns-box .email .email-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sns .sns-box .email .email-title img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.footer {
+  padding: 40px 0;
+  background: #918e8e;
+}
+
+.footer .footer-menu {
+  width: 40%;
+  margin: 0 auto 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-copy {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
