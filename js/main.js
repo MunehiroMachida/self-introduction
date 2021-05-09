@@ -18,3 +18,11 @@ $('a[href^="#"]').click(function () {
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
 });
+
+
+$(function () {
+    $('.btn-gNav').on("click", function () {
+        $('#gNav').animate({ 'height': 'toggle' });
+    });
+
+});

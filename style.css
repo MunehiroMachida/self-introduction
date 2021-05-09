@@ -13,7 +13,7 @@ h2 {
   background-color: #ffffff;
 }
 
-.header .header-box {
+.header .header-box-pc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@ h2 {
   margin: 0 auto;
 }
 
-.header .header-box h1 {
+.header .header-box-pc h1 {
   font-size: 30px;
   position: relative;
   padding: 1rem 2rem calc(1rem + 10px);
@@ -35,7 +35,7 @@ h2 {
   margin: 10px 0;
 }
 
-.header .header-box h1:before {
+.header .header-box-pc h1:before {
   position: absolute;
   top: -7px;
   left: -7px;
@@ -45,7 +45,7 @@ h2 {
   border: 4px solid #000;
 }
 
-.header .header-box .header-menu {
+.header .header-box-pc .header-menu {
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +56,81 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header .header-box-sp {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .header .header-box-pc {
+    display: none;
+  }
+  .header .header-box-sp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-box-sp h1 {
+    padding: 10px 2px 12px;
+    margin-left: 10px;
+  }
+  .header .header-menu {
+    display: none;
+  }
+  .header .header-menu p {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px dotted #918e8e;
+    background: rgba(27, 27, 27, 0.2);
+  }
+  .header .header-menu .inquiry {
+    border-bottom: 1px dotted #918e8e;
+  }
+  .header #gNav.open {
+    right: 0px;
+  }
+  .header .btn-gNav {
+    width: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .header .btn-gNav span {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background: #050505;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .header .btn-gNav span:nth-child(1) {
+    top: 0;
+  }
+  .header .btn-gNav span:nth-child(2) {
+    top: 10px;
+  }
+  .header .btn-gNav span:nth-child(3) {
+    top: 20px;
+  }
+  .header .btn-gNav #gNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
 }
 
 .fv {
@@ -151,6 +226,11 @@ h2 {
 
 #service-main .service-area .service-box .service-box-txt {
   margin-bottom: 20px;
+}
+
+#service-main p {
+  margin-top: 30px;
+  text-align: center;
 }
 
 #skill-main {
