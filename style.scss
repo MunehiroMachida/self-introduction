@@ -42,7 +42,7 @@ h2{
             align-items: center;
         }
     }
-    .header-box-sp{
+    .header-box-sp, .header-menu-sp{
         display: none;
     }
     
@@ -60,17 +60,26 @@ h2{
                 // background-color: #918e8e;
                 // margin: 10px 0;
                 margin-left: 10px;
+                
             }
             
         }
-        .header-menu{
-            // position: absolute;
-            display: none;
+        .header-menu-sp{
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            // top: 40px;
+            // display: block;
             p{
                 text-align: center;
-                padding: 10px 0;
                 border-top: 1px dotted #918e8e;
-                background: rgba(27, 27, 27, 0.2);
+                background: rgba(27, 27, 27, 0.7);
+                color: #fff;
+                a{
+                    padding: 10px 0;
+                    width: 100%;
+                    display: block;
+                }
                 // position: absolute; 
                 // top: 50%;
                 // left: 50%;

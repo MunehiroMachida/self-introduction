@@ -23,6 +23,11 @@ $('a[href^="#"]').click(function () {
 $(function () {
     $('.btn-gNav').on("click", function () {
         $('#gNav').animate({ 'height': 'toggle' });
-    });
 
+
+    });
+    $('p a').on('click', function () {
+        $('#gNav').animate({ 'height': 'toggle' }, 100);
+    });
 });
+
