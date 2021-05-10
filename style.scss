@@ -167,7 +167,7 @@ h2{
     width: 53%;
     min-width: 600px;
     margin: 0 auto 100px;
-    // background-color: aqua;
+    // 
     .profile-box{
         display: flex;
         justify-content: space-between;
@@ -187,10 +187,42 @@ h2{
             }
         }
     }
-}
 
+}
+@media only screen and (max-width:767px){
+    .profile-main{
+
+        width: 100%;
+        min-width: 480px;
+        .profile-box{
+            display: block;
+            width: 80%;
+            
+            margin: 0 auto;
+            .my-img{
+                // position: relative;
+                text-align: center;
+                margin-bottom: 20px;
+                img{
+                    // width:300px;
+                    height: auto;
+                    border-radius: 0;
+                }
+            }
+            .my-txt{
+                margin:0 auto;
+                // background-color: #000;
+                width:300px;
+                p{
+                    margin-bottom: 20px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
 #service-main{
-    // background-color: aqua;
+    // 
     width: 53%;
     min-width: 600px;
     margin: 0 auto 100px;
@@ -204,6 +236,7 @@ h2{
         display: flex;
         justify-content: space-between;
         .service-box{
+            
             .service-title{
                 font-size: 30px;
             }
@@ -229,6 +262,59 @@ h2{
         text-align: center;
     }
     
+}
+@media only screen and (max-width:767px){
+    #service-main{
+        width: 100%;
+        min-width: 480px;
+        section{
+            h2{
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+        .service-area{
+            display: block;
+            justify-content: space-between;
+            display: block;
+            width: 80%;
+            
+            margin: 0 auto;
+            .service-box{
+                margin-bottom: 20px;
+                p{
+                    margin: 0 auto;
+                    
+                }
+                .service-title{
+                    font-size: 30px;
+                }
+                p{
+                    // background-color: #918e8e;
+                    width: 350px;
+                    text-align: center;
+                    img{
+                        
+                        margin: 0 auto;
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+                .service-box-txt{
+    
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+        p{
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+    }
 }
 
 #skill-main{
@@ -280,6 +366,15 @@ h2{
     // }
 }
 
+@media only screen and (max-width:767px){
+    #skill-main{
+        width: 80%;
+        min-width: inherit;
+        margin: 0 auto 100px;
+        // background-color: #000;
+      }
+}
+
 
 #sns{
     width: 53%;
@@ -308,6 +403,44 @@ h2{
         }
     }
 }
+@media only screen and (max-width:767px){
+    #sns{
+        width: 80%;
+        min-width: inherit;
+        // background-color: #000;
+        margin: 0 auto 100px;
+        .sns-box{
+            display: block;
+            text-align: center;
+        //     justify-content: center;
+            a{
+                display: block;
+                // text-align: center;
+                margin: 0 0 10px 0;
+                img{
+                    width: 30px;
+                }
+            }
+            .email{
+                .email-title{
+                    display: block;
+                    // align-items: center;
+                    // background-color: #000;
+                    text-align: center;
+                    margin: 0 0 10px 0;
+                    img{
+                        width: 30px;
+                        margin: 0px;
+                        // margin-right: 15px;
+                    }
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
 
 .footer{
     padding: 40px 0;
@@ -321,5 +454,21 @@ h2{
     }
     .footer-copy{
         text-align: center;
+    }
+}
+@media only screen and (max-width:767px){
+    .footer{
+        padding: 40px 0;
+        background: #918e8e;
+        .footer-menu{
+            width: 80%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-copy{
+            text-align: center;
+        }
     }
 }
